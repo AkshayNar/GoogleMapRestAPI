@@ -101,13 +101,16 @@ public class PlaceServiceHelper {
 	{
 		Place place = new Place();
 		
-		
+	
 		
 		place.setAdditionalProperty("place_id", place_id);
 		
 		Response res = RestAssured.given().queryParam("key", "qaclick123")
 				.contentType(ContentType.JSON)
 				.body(place)
+				
+				
+				
 				.when().delete(EndPoints.DELETE_PLACE)
 				.then().log().all().extract().response();
 		
