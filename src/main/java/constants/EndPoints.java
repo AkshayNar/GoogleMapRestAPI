@@ -9,4 +9,5 @@ public class EndPoints {
 	public static final String UPDATE_PLACE = "/maps/api/place/update/json";
 	public static final String DELETE_PLACE = "/maps/api/place/delete/json";
 
+
 }
