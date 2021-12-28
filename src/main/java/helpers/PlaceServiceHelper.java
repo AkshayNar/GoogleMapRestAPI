@@ -109,8 +109,7 @@ public class PlaceServiceHelper {
 				.contentType(ContentType.JSON)
 				.body(place)
 				
-				
-				
+	
 				.when().delete(EndPoints.DELETE_PLACE)
 				.then().log().all().extract().response();
 		
